@@ -1,8 +1,8 @@
 set $mod Mod4
 
 # personal configs
-exec --no-startup-id xinput --set-prop 'Logitech USB Optical Mouse' 'libinput Accel Speed' -1
-exec --no-startup-id xinput set-prop 'Logitech Wireless Mouse' 'libinput Accel Speed' -1
+bindsym $mod+Shift+m exec --no-startup-id set-mouse-sensitivity
+bindsym $mod+Shift+n exec --no-startup-id xrandr --output eDP-1 --mode 1366x768 --pos 0x0 --rotate normal --output HDMI-1 --primary --mode 1920x1080 --pos 1366x0 --rotate normal
 bindsym $mod+Shift+b exec --no-startup-id xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x1080 --rotate normal --output DP-1 --mode 1920x1080 --pos 1920x0 --rotate left --output HDMI-1 --off --output HDMI-2 --mode 1920x1080 --pos 0x0 --rotate normal
 
 # general config
